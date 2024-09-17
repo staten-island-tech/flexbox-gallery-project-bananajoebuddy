@@ -4,7 +4,7 @@ html,
     font-size: 10px;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0px 15px 15px 30px;
 }
 
 .container {
@@ -14,24 +14,28 @@ html,
     justify-content: space-around;
 }
 .card{
-    width: 30rem;
-    height: 35rem;
-    border: 2px solid wheat;
+    width: 45rem;
+    height: 65rem;
+    border: 15px solid wheat;
     border-radius: 3px;
+    border-style: double;
     display: flex;
+    margin: 20rem 0;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: blanchedalmond;
     /* background-image: url(); */
 }
 
 .card-img{
     width: 100%;
     height: 40%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .card-header{
-    font-size: 2.2rem;
+    font-size: 3.0rem;
     margin-top: 1.2rem;
+    text-align: center;
 }
