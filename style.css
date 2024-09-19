@@ -1,17 +1,27 @@
 body,
+*{
+    background-color: rgb(255, 240, 220);
+}
 html,
 * {
     font-size: 10px;
     box-sizing: border-box;
     margin: 0;
     padding: 0px 15px 0px 15px;
+    font-family: "Single Day", cursive;
+    color: rgb(350, 176, 176);
+    h2,h3{
+        background-color: transparent;
+    }
 }
+  
 
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: rgb(255, 240, 220);
 }
 .card{
     width: 45rem;
@@ -33,6 +43,7 @@ html,
     width: 100%;
     height: 40%;
     object-fit: cover;
+    background-color: transparent;
 }
 
 .card-header{
