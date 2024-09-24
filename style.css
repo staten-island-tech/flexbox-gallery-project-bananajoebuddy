@@ -38,8 +38,7 @@ html,
     align-items: center;
     justify-content: space-evenly;
     background-color: blanchedalmond;
-    /* background-image: url(); */
-    box-shadow: 10px 10px 10px -10px rgb(55, 52, 59);
+    box-shadow: 1rem 1rem 1rem -1rem rgb(55, 52, 59);
 }
 
 .card-img{
@@ -47,15 +46,122 @@ html,
     height: 40%;
     object-fit: cover;
     background-color: transparent;
-    position: absolute;
-    -webkit-transition: all 0.3s;
+    position: relative;
+    transition: all 0.3s;
+}
+#card-img2{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.3s;
+}
+#card-img2:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#card-img3{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.3s;
+}
+#card-img3:hover{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#card-img4{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.3s;
+}
+#card-img4:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+#card-img5{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.3s;
+}
+#card-img5:hover{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(359deg);
+}
+
+#card-img6{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    background-color: transparent;
+    position: relative;
     transition: all 0.3s;
 }
 
-.card-img:hover{
-    transform: skew(12);
+@keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+#card-img6:hover{
+    -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
+#card-img7{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.3s;
+}
+
+@keyframes hvr-rocket {
+    5%{
+        translate: 0rem -10rem;
+    }
+    10%{
+        translate: 0rem -20rem;
+    }
+    100%{
+        translate: 0rem -500rem;
+    }
+  }
+#card-img7:hover{
+    -webkit-animation-name: hvr-rocket;
+  animation-name: hvr-rocket;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+-webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
 .card-header{
     font-size: 3.2rem;
     margin-top: 1.2rem;
